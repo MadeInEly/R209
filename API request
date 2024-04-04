@@ -1,0 +1,7 @@
+https://geo.api.gouv.fr/communes?codePostal=<code postal de la ville>
+
+code postal de Ifs : 14123
+
+https://api.meteo-concept.com/api/forecast/daily?token=74bced3fe61aaa05a376807e90339cbd4ed1510c3d5275de613cddc70f48a1e2&insee=<code insee de la ville>
+
+code insee de Ifs : 14341
