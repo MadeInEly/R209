@@ -1,7 +1,7 @@
 h1{
-   background-image: url("../img/fond.jpg");
+   background-color: blue;
    text-align:center
 } 
 body {
-   background-color: #004b807e;
+   background-image: url("../img/fond.jpg");
 }
