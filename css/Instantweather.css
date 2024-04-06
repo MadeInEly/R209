@@ -1,3 +1,4 @@
+#header
 h1{
    background-color: blue;
    text-align:center;
@@ -5,6 +6,10 @@ h1{
 body {
    background-image: url("../img/fond.jpg");
 }
+h2{
+   background-color: blue;
+   text-align:center;
+} 
 
 h1::after {
    content: "";
@@ -13,6 +18,7 @@ h1::after {
    left: -10px;
    right: -10px;
    bottom: -10px;
+   text-align: center;
    background-color: rgba(0, 0, 255, 0);
    transition: background-color 1s ease-in-out;
    z-index: -1;
@@ -26,6 +32,24 @@ h1.initial-animation::after {
    background-color: rgba(0, 0, 255, 0.3); 
    animation: fadeIn 1s ease-in-out 2s forwards; 
 }
+h2::after {
+   content: "";
+   position: absolute;
+   background-color: rgba(0, 0, 255, 0);
+   transition: background-color 1s ease-in-out;
+   z-index: -1;
+}
+
+h2:hover::after {
+   background-color: rgba(0, 0, 255, 0.3); 
+}
+
+h2.initial-animation::after {
+   background-color: rgba(0, 0, 255, 0.3); 
+   animation: fadeIn 1s ease-in-out 2s forwards; 
+}
+
+#animations
 
 @keyframes fadeIn {
    from {
@@ -35,3 +59,44 @@ h1.initial-animation::after {
        background-color: rgba(6, 6, 243, 0.4);
    }
 }
+
+body {
+   margin: 0;
+   font-family: Arial, sans-serif;
+}
+
+#nav
+
+nav {
+   background-color: #333;
+}
+
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+nav ul li {
+   display: inline;
+}
+
+nav ul li a {
+   display: block;
+   padding: 10px 20px;
+   text-decoration: none;
+   color: white;
+}
+
+nav ul li a:hover {
+   background-color: #555;
+}
+
+section {
+   padding: 20px;
+}
+
+h2 {
+   margin-top: 0;
+}
+
