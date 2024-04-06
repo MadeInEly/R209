@@ -10,4 +10,4 @@ codePostal.addEventListener('input', () => {
     if (CPsaisi.length === 5) {
         console.log('valeur:' , CPSaisi))
     }
-})
+}
