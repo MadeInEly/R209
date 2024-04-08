@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carte France</title>
     <link rel ="stylesheet" href="./css/cartefrance.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="#previsions">Prévisions</a></li>
+            <li><a href="Index.html">Prévisions</a></li>
             <li><a href="carte france.html">Carte France</a></li>
         </ul>
     </nav>
+    <div class="titre">
+        <h1 class="texte">Cliquer sur votre ville pour savoir son code postal</h1>
+    </div>
+    <div id="map" style="height: 400px;"></div>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="java/carte.js"></script>
 </body>
+</html>
