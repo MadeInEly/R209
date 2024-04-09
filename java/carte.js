@@ -1,4 +1,4 @@
-const map = L.map('map').setView([48.8566, 2.3522], 10);
+const map = L.map('map').setView([48.8566, 2.3522], 5); // Coordonnées de Paris (centre de la France), zoom de départ : 5
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
@@ -10,9 +10,12 @@ map.on('click', async function(e) {
     
     if (data.address && data.address.postcode) {
         const codePostal = data.address.postcode;
-        console.log('Numéro de la commune:', codePostal);
+        console.log('Numéro de la commune:', codePostal); //affiche dans la console
+        document.getElementById('affichecodepostal').textContent = `Numéro de la commune : ${codePostal}`; //affiche sur la page html
     } else {
         console.log('Aucune commune trouvée à cet emplacement.');
+        document.getElementById('affichecodepostal').textContent = `Aucune commune trouvée à cet emplacement`;
     }
 });
+
 
