@@ -1,4 +1,4 @@
-const map = L.map('map').setView([48.8566, 2.3522], 5); // Coordonnées de Paris (centre de la France), zoom de départ : 5
+const map = L.map('map').setView([48.8566, 2.3522], 5);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
